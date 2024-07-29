@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:task1flutter/home.dart';
 
 
 import 'component/customButton.dart';
@@ -137,7 +138,11 @@ class _LogInState extends State<LogIn> {
 
 
             CustomButton(title: 'login',
-              onpressed: (){},
+              onpressed: (){
+
+
+                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Home()));
+              },
 
             ),
 
